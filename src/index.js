@@ -21,3 +21,18 @@ function getResponse(){
       let btn = document.createElement('button');
       divT.className = 'card';
       btn.classList.add("like-btn");
+       for(toy of object)
+      {
+         h.innerHTML = toy.name;          
+         img.src = toy.image ;          
+         p.innerHTML= toy.likes;          
+         div1.prepend(h);
+         h.after(img);
+         img.after(p);
+         p.after(btn);
+         div.appendChild(divT);         
+        }
+    });
+
+}
+getResponse();
